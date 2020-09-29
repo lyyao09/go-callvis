@@ -1,8 +1,5 @@
 # Builder image
-FROM golang:1.12-alpine
-
-# Install dependencies
-RUN apk add --no-cache git gcc
+FROM tetafro/golang-gcc:latest
 
 # Set workspace
 WORKDIR /src/go-callvis/
